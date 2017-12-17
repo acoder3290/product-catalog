@@ -1,0 +1,22 @@
+<div ng-switch="action">
+    <div ng-switch-when="detail">
+        <label>Name</label>
+        <label>{{product.name}}</label>
+        <label>SKU</label>
+        <label>{{product.sku}}</label>
+        <label>Description</label>
+        <label>{{product.description}}</label>
+        <label>Brand</label>
+        <label>{{product.brand}}</label>
+    </div>
+    <div ng-switch-default>
+            <label>Name</label>
+            <input type="text" ng-model="product.name">
+            <label>SKU</label>
+            <input type="text" ng-model="product.sku">
+            <label>Description</label>
+            <input type="text" ng-model="product.description">
+            <label>Brand</label>
+            <input type="text" ng-model="product.brand">
+        </div>
+</div>
